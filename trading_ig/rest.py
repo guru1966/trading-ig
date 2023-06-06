@@ -373,7 +373,7 @@ class IGService:
                     raise (NotImplementedError("col overlap: %r" % col))
         return data
 
-    # -------- END ------- #
+    # -------- END DATAFRAME TOOLS ------- #
 
     # -------- ACCOUNT ------- #
 
@@ -800,7 +800,7 @@ class IGService:
 
         return data
 
-    # -------- END -------- #
+    # -------- END ACCOUNT -------- #
 
     # -------- DEALING -------- #
 
@@ -1207,7 +1207,7 @@ class IGService:
         else:
             raise IGException(response.text)
 
-    # -------- END -------- #
+    # -------- END DEALING -------- #
 
     # -------- MARKETS -------- #
 
@@ -1683,7 +1683,7 @@ class IGService:
         logger.info("Historic price data allowance: %s remaining until %s" %
                     (remaining_allowance, allowance_expiry))
 
-    # -------- END -------- #
+    # -------- END MARKETS -------- #
 
     # -------- WATCHLISTS -------- #
 
@@ -1761,7 +1761,7 @@ class IGService:
         data = self.parse_response(response.text)
         return data
 
-    # -------- END -------- #
+    # -------- END WATCHLISTS -------- #
 
     # -------- LOGIN -------- #
 
@@ -1917,7 +1917,7 @@ class IGService:
         data = self.parse_response(response.text)
         return data
 
-    # -------- END -------- #
+    # -------- END LOGIN -------- #
 
     # -------- GENERAL -------- #
 
@@ -1967,7 +1967,7 @@ class IGService:
         data = self.parse_response(response.text)
         return data
 
-    # -------- END -------- #
+    # -------- END GENERAL -------- #
 
 
 def handle_session_tokens(response, session):

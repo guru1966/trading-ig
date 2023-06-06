@@ -87,6 +87,11 @@ And with all optional dependencies::
 
     $ pip install trading-ig pandas munch tenacity
 
+Fix "No module named error: Crypto"::
+    $pip uninstall crypto 
+    $pip3 uninstall pycrypto 
+    $pip3 install pycryptodome
+
 Docs
 ----
 
